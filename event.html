@@ -1,0 +1,149 @@
+<h1>EVENTS</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+    <style>
+
+        body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px auto;
+        }
+
+        td {
+
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #fff;
+        }
+
+        /* Responsive CSS */
+        @media (max-width: 600px) {
+            td {
+                padding: 5px;
+            }
+        }
+    .flip-card{    margin-left: 23%;
+}
+    </style>
+</head>
+<body>
+
+<table>
+    <tr>
+        <td>                 
+           <div class="flip-card">
+              <div class="flip-card-inner">
+                  <div class="flip-card-front">
+               <img src="tw.jpeg" alt="Avatar" style="width:300px;height:300px;">
+                  </div>
+                <div class="flip-card-back">
+                  <h1>TECH WEEK</h1> 
+                  <p>Dive into the future of tech at IYT Tech Week 2023 – where innovation meets inspiration!</p>
+                </div>
+             </div>
+        </div></td>
+        <td>                                         
+           <div class="flip-card">
+              <div class="flip-card-inner">
+                 <div class="flip-card-front">
+                  <img src="web.jpg" alt="Avatar" style="width:300px;height:300px;">
+                   </div>
+                <div class="flip-card-back">
+                 <h1>WEB SUMMIT</h1> 
+                 <p>Experience the future at WEB SUMMIT 2023 – where tech innovation meets global inspiration.</p>
+                    </div>
+                   </div>
+                     </div></td>
+        <td>                                         
+           <div class="flip-card">
+                   <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                  <img src="digi.png" alt="Avatar" style="width:300px;height:300px;">
+                  </div>
+                         <div class="flip-card-back">
+                        <h1>DIGI DAY</h1> 
+                        <p>Dive into the future at DIGI DAY 2022 – a day of digital discovery and innovation!</p>
+                          </div>
+            </div>
+           </div></td>
+    </tr>
+    <tr>
+      <td>                                         
+         <div class="flip-card">
+     <div class="flip-card-inner">
+       <div class="flip-card-front">
+          <img src="hack.jpg" alt="Avatar" style="width:300px;height:300px;">
+           </div>
+                <div class="flip-card-back">
+                 <h1>HACKATHON</h1>  
+                 <p>Dive into a coding frenzy at our HACKATHON – where ideas become reality in a race against the clock!</p>       
+                   </div>
+                           </div>
+                                        </div></td>
+      <td>                                          <div class="flip-card">
+                  <div class="flip-card-inner">
+                <div class="flip-card-front">
+    <img src="art.jpeg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+                      <div class="flip-card-back">
+                          <h1>ART&TECH SUMMIT</h1>
+                          <p>Experience the fusion of creativity and innovation at the ART&TECH SUMMIT.</p> 
+  </div>
+  </div>
+ </div>
+</td>
+  </tr>
+  
+</table>
+
+</body>
+</html>
